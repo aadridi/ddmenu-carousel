@@ -3,9 +3,47 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
+		<title>Drop-Down Menu & Carousel</title>
 	</head>
 	<body>
-		<h1>This is my website!</h1>
+		<header>Header</header>
+		<main>
+			<section>
+				<h2>Drop-Down Menu Exercise</h2>
+				<div class="ddme">
+					<button type="button" id="ddme-btn">Hover over me!</button>
+					<div class="ddme-list hidden"></div>
+				</div>
+				<p>Juste un petit texte pour voir comment le texte réagit en fonction de la présence ou non des liens liés au Drop-Down Menu.</p>
+			</section>
+			<section>
+				<h2>Carousel Exercise</h2>
+				<div class="carousel">
+					<!-- Bande défilante -->
+					<div class="carousel-track">
+						<img src="https://placehold.co/300x200?text=1" alt="placeholder" />
+						<img src="https://placehold.co/300x200?text=2" alt="placeholder" />
+						<img src="https://placehold.co/300x200?text=3" alt="placeholder" />
+						<img src="https://placehold.co/300x200?text=4" alt="placeholder" />
+					</div>
+
+					<!-- Boutons de navigation -->
+					<button class="carousel-button prev" type="button">Previous</button>
+					<button class="carousel-button next" type="button">Next</button>
+
+					<!-- Petits points -->
+					<div class="carousel-nav">
+						<button type="button" class="dot active"></button>
+						<button type="button" class="dot"></button>
+						<button type="button" class="dot"></button>
+						<button type="button" class="dot"></button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>Footer</footer>
 	</body>
 </html>

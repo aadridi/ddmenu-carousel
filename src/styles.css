@@ -1,4 +1,123 @@
 /* styles.css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-	background-color: rebeccapurple;
+	font-family: 'Montserrat', sans-serif;
+	display: grid;
+	grid-template-rows: 1fr 5fr 1fr;
+	min-height: 100vh;
+}
+
+header {
+	background-color: #3a2618;
+	padding: 10px 10px;
+	color: white;
+}
+
+main {
+	background-color: #9a8873;
+	padding: 10px 10px;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	gap: 100px;
+}
+
+section {
+	width: 50%;
+}
+
+#ddme-btn {
+	height: 40px;
+	width: 130px;
+	padding: 0.5em 0.5em;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.hidden {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	background-color: #37423d;
+	width: 130px;
+	border: 1px solid white;
+}
+
+footer {
+	background-color: #754043;
+	padding: 10px 10px;
+	color: white;
+}
+
+/* CSS Carousel */
+
+.carousel {
+	width: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.carousel-track {
+	display: flex;
+}
+
+.carousel-track img {
+	width: 300px;
+	object-fit: cover;
+}
+
+.carousel-button.prev {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	width: 60px;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.carousel-button.next {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	width: 60px;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.carousel-nav {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	position: absolute;
+	bottom: 10px;
+	justify-self: center;
+	border-radius: 50%;
+}
+
+.carousel-nav button {
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #333;
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.dot.active {
+	background-color: #754043;
+	transform: scale(1.2);
 }
