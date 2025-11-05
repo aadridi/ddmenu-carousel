@@ -1,5 +1,7 @@
 // src/index.js
 import './styles.css';
+import { updateCarousel } from './modules/carousel.js';
+
 /* import { createDropDownMenu } from './modules/ddm.js'; */
 
 /* Partie DropDownMenu Exercise
@@ -17,3 +19,4 @@ ddmeBtn.addEventListener('click', () => {
 });*/
 
 /* Partie Carousel */
+updateCarousel(currentIndex);

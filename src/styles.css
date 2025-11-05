@@ -25,10 +25,16 @@ main {
 	display: flex;
 	flex-direction: row;
 	gap: 100px;
+	padding: 40px 40px;
 }
 
 section {
 	width: 50%;
+	padding: 20px 0px;
+}
+
+section h2 {
+	margin-bottom: 20px;
 }
 
 #ddme-btn {
@@ -80,22 +86,24 @@ footer {
 	position: absolute;
 	top: 50%;
 	left: 10px;
-	width: 60px;
 	background: rgba(0, 0, 0, 0.3);
 	color: white;
 	border: none;
 	cursor: pointer;
+	border-radius: 5px;
+	padding: 0.5em 0.8em;
 }
 
 .carousel-button.next {
 	position: absolute;
 	top: 50%;
 	right: 10px;
-	width: 60px;
 	background: rgba(0, 0, 0, 0.3);
 	color: white;
 	border: none;
 	cursor: pointer;
+	border-radius: 5px;
+	padding: 0.5em 0.8em;
 }
 
 .carousel-nav {
