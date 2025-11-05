@@ -48,4 +48,14 @@ dotsBtn.forEach((dot, index) => {
     })
 })
 
+// Défilement automatique toutes les 3 secondes
+setInterval(() => {
+	currentIndex++;
+	if (currentIndex > slides.length - 1) {
+		currentIndex = 0;
+	}
+	updateCarousel(currentIndex);
+}, 3000);
+
+
 export { updateCarousel };

@@ -19,4 +19,4 @@ ddmeBtn.addEventListener('click', () => {
 });*/
 
 /* Partie Carousel */
-updateCarousel(currentIndex);
+updateCarousel(0);
